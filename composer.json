@@ -1,0 +1,23 @@
+{
+    "name": "nelsonzabala/container",
+    "description": "this is a demo IoC container, please do NOT use it in production",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Nelson",
+            "email": "nelson_nnn@outlook.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require-dev": {
+        "phpunit/phpunit": "^4.8",
+        "mockery/mockery": "^0.9.4"
+    },
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Nelsonzabala\\Container\\": "src/"
+        }
+    }
+}
