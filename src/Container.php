@@ -43,7 +43,7 @@ class Container
 
     public function bind($name, $resolver, $shared = false)
     {
-        $this->bindings[$name] = [
+        $this->bindingses[$name] = [
             'resolver' => $resolver,
             'shared'   => $shared
         ];
@@ -68,7 +68,7 @@ class Container
         if (isset ($this->shared[$name]))
         {
             return $this->shared[$name];
-        
+        }
 
         if (isset ($this->bindings[$name])) {
             $resolver = $this->bindings[$name]['resolver'];
