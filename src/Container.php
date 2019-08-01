@@ -43,7 +43,7 @@ class Container
 
     public function bind($name, $resolver, $shared = false)
     {
-        $this->bindingses[$name] = [
+        $this->bindings[$name] = [
             'resolver' => $resolver,
             'shared'   => $shared
         ];
@@ -60,7 +60,7 @@ class Container
      */
     public function singleton($name, $resolver)
     {
-        $this->bind($name, $resolver, true);
+        $this->bindin($name, $resolver, true);
     }
 
     public function make($name, array $arguments = array())
