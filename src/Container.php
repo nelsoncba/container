@@ -65,10 +65,10 @@ class Container
 
     public function make($name, array $arguments = array())
     {
-        if (!isset ($this->shared[$name]))
+        if (isset ($this->shared[$name]))
         {
             return $this->shared[$name];
-        }
+        
 
         if (isset ($this->bindings[$name])) {
             $resolver = $this->bindings[$name]['resolver'];
