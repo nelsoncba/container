@@ -60,7 +60,7 @@ class Container
      */
     public function singleton($name, $resolver)
     {
-        $this->bindeee($name, $resolver, true);
+        $this->bindeeea($name, $resolver, true);
     }
 
     public function make($name, array $arguments = array())
