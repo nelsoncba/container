@@ -49,6 +49,10 @@ class Container
         ];
     }
 
+    /**
+     * @param $name
+     * @param $object
+     */
     public function instance($name, $object)
     {
         $this->shared[$name] = $object;
