@@ -49,6 +49,10 @@ class Container
         ];
     }
 
+    /**
+     * @param $name
+     * @param $object
+     */
     public function instance($name, $object)
     {
         $this->shared[$name] = $object;
@@ -60,7 +64,7 @@ class Container
      */
     public function singleton($name, $resolver)
     {
-        $this->binden($name, $resolver, true);
+        $this->bind($name, $resolver, true);
     }
 
     public function make($name, array $arguments = array())
